@@ -1,10 +1,36 @@
-- 👋 Hi, I’m @jeferson-longo
-- 👀 I’m interested in Programing
-- 🌱 I’m currently learning Python
-- 💞️ I’m looking to collaborate on Project Python
-- 📫 How to reach me linkedin.com/jeferson-longo
+class MeuNome:
+    def __init__(self, nome, interesse, curso, colaboracao, linkedin):
+        self.nome = nome
+        self.interesse = interesse
+        self.curso = curso
+        self.colaboracao = colaboracao
+        self.linkedin = linkedin
+        
+    
+    def MostraLinha(self):
+        print('*' * 30)
 
-<!---
-jeferson-longo/jeferson-longo is a ✨ special ✨ repository because its `README.md` (this file) appears on your GitHub profile.
-You can click the Preview link to take a look at your changes.
---->
+    def Nome(self):
+        print(f'Olá, meu nome é {self.nome}')
+
+    def Interesse(self):
+        print(f'Estou interessado em Programação')
+
+    def Curso(self):
+        print(f'Estou me desenvolvendo em Python')
+
+    def Colaboracao(self):
+        print(f'Pretendo colaborar em projetos feitos em Python')
+
+    def Linkedin(self):
+        print('Podem me localizar através do www.linkedin.com/in/jeferson-longo')
+
+
+meu_nome = MeuNome('Jeferson Longo', 'Programação', 'Python', 'Projetos Python', 'jeferson-longo')
+
+
+meu_nome.Nome()
+meu_nome.Interesse()
+meu_nome.Curso()
+meu_nome.Colaboracao()
+meu_nome.Linkedin()
